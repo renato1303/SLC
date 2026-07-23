@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3A6" />
+      <stop offset="100%" stop-color="#16A37F" />
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagon S Icon -->
+  <path d="M26 6L44 16.3923V37.1846L26 47.5769L8 37.1846V16.3923L26 6Z" fill="#0E1424" stroke="url(#logo-grad)" stroke-width="2.5"/>
+  <path d="M20 18C20 16.8954 20.8954 16 22 16H30C31.1046 16 32 16.8954 32 18V21C32 22.1046 31.1046 23 30 23H22C20.8954 23 20 23.8954 20 25V30C20 31.1046 20.8954 32 22 32H30C31.1046 32 32 32.8954 32 34V37C32 38.1046 31.1046 39 30 39H22C20.8954 39 20 38.1046 20 37" stroke="#22D3A6" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- Brand Text -->
+  <text x="56" y="28" font-family="'Sora', sans-serif" font-weight="700" font-size="18" fill="#F5F7FA" letter-spacing="0.05em">SALES LAB</text>
+  <text x="56" y="44" font-family="'Sora', sans-serif" font-weight="600" font-size="11" fill="#22D3A6" letter-spacing="0.25em">COMPANY</text>
+</svg>
