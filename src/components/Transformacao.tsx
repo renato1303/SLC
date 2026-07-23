@@ -96,7 +96,7 @@ export const Transformacao: React.FC<TransformacaoProps> = ({ onCtaClick }) => {
         </div>
 
         {/* CTA Button with Animated Glowing Border Light Beam */}
-        <div className="mt-10 sm:mt-12 flex justify-center px-2 reveal">
+        <div className="mt-10 sm:mt-12 flex flex-col items-center justify-center px-2 reveal">
           <div className="relative inline-flex items-center justify-center p-[2.5px] rounded-xl overflow-hidden transition-transform hover:scale-[1.02] active:scale-[0.98] group/beam max-w-full">
             {/* Soft Glowing Aura Beam */}
             <div 
@@ -117,10 +117,15 @@ export const Transformacao: React.FC<TransformacaoProps> = ({ onCtaClick }) => {
               onClick={handleClick}
               className="relative z-10 inline-flex items-center justify-center px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-[#0B0F1A] bg-gradient-to-r from-[#22D3A6] to-[#16a37f] rounded-[9px] shadow-[0_0_25px_rgba(34,211,166,0.35)] hover:shadow-[0_0_45px_rgba(34,211,166,0.6)] transition-all cursor-pointer group whitespace-nowrap"
             >
-              <span>Quero meu diagnóstico gratuito</span>
+              <span>Quero o diagnóstico da minha operação</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 sm:ml-2.5 group-hover:translate-x-1 transition-transform shrink-0" />
             </button>
           </div>
+
+          {/* Microcopy Below Button */}
+          <p className="mt-3 text-xs sm:text-sm text-[#9AA3B2] text-center font-medium tracking-wide">
+            Preenchimento em ~2 min · retorno do time em até 24h úteis
+          </p>
         </div>
 
       </div>

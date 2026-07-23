@@ -16,18 +16,17 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         
         {/* Direct Headline - NO eyebrow above */}
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#F5F7FA] tracking-tight leading-[1.18] drop-shadow-sm break-words">
-          Mais de R$30 milhões gerados estruturando processos comerciais que{' '}
-          <span className="text-[#22D3A6] drop-shadow-[0_0_20px_rgba(34,211,166,0.35)]">não dependem mais do dono</span>{' '}
-          para vender.
+          Diagnóstico da sua estrutura comercial em 24h feito por quem estrutura operações que vendem{' '}
+          <span className="text-[#22D3A6] drop-shadow-[0_0_20px_rgba(34,211,166,0.35)]">sem depender do dono</span>.
         </h1>
 
         {/* Sub-headline */}
         <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl text-[#9AA3B2] font-normal leading-relaxed max-w-2xl mx-auto px-2">
-          Instalamos Setters, Closers e Sales Farming na sua operação com processo, script e gestão validados, não com sorte.
+          A Sales Lab analisa as seis partes que fazem um comercial funcionar: time, processo, geração de demanda, CRM, atendimento e gestão e mostra onde a sua operação está travando o crescimento.
         </p>
 
         {/* Single CTA Button with Animated Glowing Border Light Beam */}
-        <div className="mt-8 sm:mt-10 flex justify-center px-2">
+        <div className="mt-8 sm:mt-10 flex flex-col items-center justify-center px-2">
           <div className="relative inline-flex items-center justify-center p-[2.5px] rounded-xl overflow-hidden transition-transform hover:scale-[1.02] active:scale-[0.98] group/beam max-w-full">
             {/* Soft Glowing Aura Beam */}
             <div 
@@ -48,30 +47,15 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
               onClick={onCtaClick}
               className="relative z-10 inline-flex items-center justify-center px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-[#0B0F1A] bg-gradient-to-r from-[#22D3A6] to-[#16a37f] rounded-[9px] shadow-[0_0_25px_rgba(34,211,166,0.35)] hover:shadow-[0_0_45px_rgba(34,211,166,0.6)] transition-all cursor-pointer group whitespace-nowrap"
             >
-              <span>Quero meu diagnóstico gratuito</span>
+              <span>Quero o diagnóstico da minha operação</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 sm:ml-2.5 group-hover:translate-x-1 transition-transform shrink-0" />
             </button>
           </div>
-        </div>
 
-        {/* Credibility Line (4 Real Metrics with Glassmorphism Cards) */}
-        <div className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 text-center">
-          <div className="p-3 sm:p-4 rounded-xl glass-card glass-card-hover">
-            <div className="text-lg sm:text-2xl font-bold text-[#22D3A6] drop-shadow-[0_0_10px_rgba(34,211,166,0.2)]">+R$30Mi</div>
-            <div className="text-[11px] sm:text-xs text-[#9AA3B2] mt-0.5 sm:mt-1 font-medium">Gerados em B2B</div>
-          </div>
-          <div className="p-3 sm:p-4 rounded-xl glass-card glass-card-hover">
-            <div className="text-lg sm:text-2xl font-bold text-[#22D3A6] drop-shadow-[0_0_10px_rgba(34,211,166,0.2)]">+R$2Mi</div>
-            <div className="text-[11px] sm:text-xs text-[#9AA3B2] mt-0.5 sm:mt-1 font-medium">Vendidos 1 a 1</div>
-          </div>
-          <div className="p-3 sm:p-4 rounded-xl glass-card glass-card-hover">
-            <div className="text-lg sm:text-2xl font-bold text-[#22D3A6] drop-shadow-[0_0_10px_rgba(34,211,166,0.2)]">+7 Países</div>
-            <div className="text-[11px] sm:text-xs text-[#9AA3B2] mt-0.5 sm:mt-1 font-medium">Operações ativas</div>
-          </div>
-          <div className="p-3 sm:p-4 rounded-xl glass-card glass-card-hover">
-            <div className="text-lg sm:text-2xl font-bold text-[#22D3A6] drop-shadow-[0_0_10px_rgba(34,211,166,0.2)]">6 Meses</div>
-            <div className="text-[11px] sm:text-xs text-[#9AA3B2] mt-0.5 sm:mt-1 font-medium">Acompanhamento</div>
-          </div>
+          {/* Microcopy Below Button */}
+          <p className="mt-3 text-xs sm:text-sm text-[#9AA3B2] text-center font-medium tracking-wide">
+            Preenchimento em ~2 min · retorno do time em até 24h úteis
+          </p>
         </div>
 
       </div>
