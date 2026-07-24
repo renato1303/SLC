@@ -9,7 +9,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
       id: 1,
       cliente: "Cliente Sales Lab #1",
       tag: "Consultoria B2B & Serviços",
-      img: "/depoimento01.jpeg",
+      img: "/depoimento01.webp",
       destaque: "R$240k no mês · Meta ampliada para R$3.000.000",
       revealClass: "reveal-left"
     },
@@ -17,7 +17,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
       id: 2,
       cliente: "Cliente Sales Lab #2",
       tag: "Agência & Serviços B2B",
-      img: "/depoimento02.jpeg",
+      img: "/depoimento02.webp",
       destaque: "2 contratos fechados na 1ª semana de aplicação",
       revealClass: "reveal-scale"
     },
@@ -25,7 +25,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
       id: 3,
       cliente: "Cliente Sales Lab #3",
       tag: "Mentoria High-Ticket",
-      img: "/depoimento03.jpeg",
+      img: "/depoimento03.webp",
       destaque: "3 mentorias high-ticket fechadas em 5 dias",
       revealClass: "reveal-right"
     }
@@ -88,15 +88,12 @@ export const ProvaSocialWhatsapp: React.FC = () => {
                 onClick={() => setSelectedImg(dep.img)}
                 className={`relative group cursor-pointer overflow-hidden rounded-2xl border border-white/15 bg-slate-900/60 shadow-2xl transition-all duration-300 hover:border-[#22D3A6]/50 hover:shadow-[0_0_25px_rgba(34,211,166,0.15)] ${dep.revealClass}`}
               >
-                <picture className="w-full">
-                  <source srcSet={dep.img.replace('.jpeg', '.webp')} type="image/webp" />
-                  <img 
-                    src={dep.img} 
-                    alt={dep.cliente}
-                    className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                    loading="lazy"
-                  />
-                </picture>
+                <img 
+                  src={dep.img} 
+                  alt={dep.cliente}
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs sm:text-sm font-medium">
                   <ZoomIn className="w-5 h-5 text-[#22D3A6]" />
                   <span>Clique para ampliar</span>
@@ -112,15 +109,12 @@ export const ProvaSocialWhatsapp: React.FC = () => {
               onClick={() => setSelectedImg(dep.img)}
               className="w-full max-w-2xl relative group cursor-pointer overflow-hidden rounded-2xl border border-white/15 bg-slate-900/60 shadow-2xl transition-all duration-300 hover:border-[#22D3A6]/50 hover:shadow-[0_0_25px_rgba(34,211,166,0.15)] reveal-scale sm:-mt-2 z-10"
             >
-              <picture className="w-full">
-                <source srcSet={dep.img.replace('.jpeg', '.webp')} type="image/webp" />
-                <img 
-                  src={dep.img} 
-                  alt={dep.cliente}
-                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                  loading="lazy"
-                />
-              </picture>
+              <img 
+                src={dep.img} 
+                alt={dep.cliente}
+                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                loading="lazy"
+              />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs sm:text-sm font-medium">
                 <ZoomIn className="w-5 h-5 text-[#22D3A6]" />
                 <span>Clique para ampliar</span>

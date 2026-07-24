@@ -11,17 +11,14 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
       
       {/* Background Person Image for Mobile/Tablet */}
       <div className="lg:hidden absolute inset-x-0 top-0 w-full h-[460px] sm:h-[560px] pointer-events-none overflow-hidden z-0 flex justify-center items-start">
-        <picture className="w-full h-full">
-          <source srcSet="/fotohead_mobile.webp" type="image/webp" />
-          <img 
-            src="/fotohead_mobile.png" 
-            alt="Sales Lab Head Mobile" 
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-            className="w-full h-full object-cover object-top opacity-90 sm:opacity-95 filter contrast-[1.05]"
-          />
-        </picture>
+        <img 
+          src="/fotohead_mobile.webp" 
+          alt="Sales Lab Head Mobile" 
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          className="w-full h-full object-cover object-top opacity-90 sm:opacity-95 filter contrast-[1.05]"
+        />
         {/* Soft gradient fade overlay into dark background behind text */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0B0F1A]/70 to-[#0B0F1A]" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#0B0F1A] via-[#0B0F1A]/95 to-transparent" />
@@ -30,17 +27,14 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
       {/* Background Person Image for Desktop */}
       <div className="hidden lg:flex absolute inset-y-0 right-0 w-[58%] h-full pointer-events-none overflow-hidden z-0 justify-end items-start">
-        <picture className="w-full h-full">
-          <source srcSet="/fotohead.webp" type="image/webp" />
-          <img 
-            src="/fotohead.png" 
-            alt="Sales Lab Head Desktop" 
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-            className="w-full h-full object-cover object-right-top opacity-95 filter contrast-[1.05]"
-          />
-        </picture>
+        <img 
+          src="/fotohead.webp" 
+          alt="Sales Lab Head Desktop" 
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          className="w-full h-full object-cover object-right-top opacity-95 filter contrast-[1.05]"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F1A] via-[#0B0F1A]/45 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#0B0F1A] via-[#0B0F1A]/80 to-transparent" />
         <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#0B0F1A] to-transparent" />

@@ -8,19 +8,19 @@ export const ProvaSocial: React.FC = () => {
     {
       cliente: "Cliente Sales Lab #1",
       tag: "Consultoria B2B & Serviços",
-      img: "/depoimento01.jpeg",
+      img: "/depoimento01.webp",
       destaque: "R$240.000 no mês (Meta de R$2M subiu para R$3M)"
     },
     {
       cliente: "Cliente Sales Lab #2",
       tag: "Agência / Aceleração",
-      img: "/depoimento02.jpeg",
+      img: "/depoimento02.webp",
       destaque: "2 contratos fechados em 1 semana"
     },
     {
       cliente: "Cliente Sales Lab #3",
       tag: "Infoprodutor & Mentoria",
-      img: "/depoimento03.jpeg",
+      img: "/depoimento03.webp",
       destaque: "3 mentorias de R$15.000 vendidas no mesmo ciclo"
     }
   ];
@@ -76,16 +76,13 @@ export const ProvaSocial: React.FC = () => {
               {/* Chat Screenshot Image */}
               <div className="p-4 bg-[#0B141A] relative group cursor-pointer" onClick={() => setSelectedImg(print.img)}>
                 <div className="relative overflow-hidden rounded-xl border border-white/10 bg-slate-900">
-                  <picture className="w-full">
-                    <source srcSet={print.img.replace('.jpeg', '.webp')} type="image/webp" />
-                    <img 
-                      src={print.img} 
-                      alt={print.cliente}
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-auto object-contain max-h-[450px]"
-                    />
-                  </picture>
+                  <img 
+                    src={print.img} 
+                    alt={print.cliente}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto object-contain max-h-[450px]"
+                  />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs font-medium">
                     <ZoomIn className="w-5 h-5 text-[#00E5A0]" />
                     <span>Clique para ampliar</span>
