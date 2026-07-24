@@ -9,7 +9,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
       id: 1,
       cliente: "Cliente Sales Lab #1",
       tag: "Consultoria B2B & Serviços",
-      img: "/depoimento01.jpeg",
+      img: "/depoimento01.webp",
       destaque: "R$240k no mês · Meta ampliada para R$3.000.000",
       revealClass: "reveal-left"
     },
@@ -17,7 +17,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
       id: 2,
       cliente: "Cliente Sales Lab #2",
       tag: "Agência & Serviços B2B",
-      img: "/depoimento02.jpeg",
+      img: "/depoimento02.webp",
       destaque: "2 contratos fechados na 1ª semana de aplicação",
       revealClass: "reveal-scale"
     },
@@ -25,7 +25,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
       id: 3,
       cliente: "Cliente Sales Lab #3",
       tag: "Mentoria High-Ticket",
-      img: "/depoimento03.jpeg",
+      img: "/depoimento03.webp",
       destaque: "3 mentorias high-ticket fechadas em 5 dias",
       revealClass: "reveal-right"
     }
@@ -50,7 +50,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
           <div className="w-full md:flex-1">
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/15 bg-slate-900/80 shadow-2xl transition-all duration-300 hover:border-[#22D3A6]/50 hover:shadow-[0_0_25px_rgba(34,211,166,0.15)]">
               <iframe
-                src="https://player.vimeo.com/video/1212392009?autoplay=1&muted=1&title=0&byline=0&portrait=0&badge=0"
+                src="https://player.vimeo.com/video/1212392009?title=0&byline=0&portrait=0&badge=0"
                 className="absolute top-0 left-0 w-full h-full rounded-2xl"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
@@ -65,7 +65,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
           <div className="w-full max-w-[280px] sm:max-w-[310px] md:w-[310px] shrink-0">
             <div className="relative w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/15 bg-slate-900/80 shadow-2xl transition-all duration-300 hover:border-[#22D3A6]/50 hover:shadow-[0_0_25px_rgba(34,211,166,0.15)]">
               <iframe
-                src="https://player.vimeo.com/video/1212392010?autoplay=1&muted=1&title=0&byline=0&portrait=0&badge=0"
+                src="https://player.vimeo.com/video/1212392010?title=0&byline=0&portrait=0&badge=0"
                 className="absolute top-0 left-0 w-full h-full rounded-2xl"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
