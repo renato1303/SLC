@@ -1,20 +1,15 @@
-import React, { useEffect, lazy, Suspense } from 'react';
+import React, { useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-
-// Lazy loading below-the-fold components to minimize initial bundle size and maximize loading speed
-const FormularioDiagnostico = lazy(() => import('./components/FormularioDiagnostico').then(m => ({ default: m.FormularioDiagnostico })));
-const Metodo = lazy(() => import('./components/Metodo').then(m => ({ default: m.Metodo })));
-const Transformacao = lazy(() => import('./components/Transformacao').then(m => ({ default: m.Transformacao })));
-const ProvaSocialWhatsapp = lazy(() => import('./components/ProvaSocialWhatsapp').then(m => ({ default: m.ProvaSocialWhatsapp })));
-const SobreFundador = lazy(() => import('./components/SobreFundador').then(m => ({ default: m.SobreFundador })));
-const FormularioFaqFooter = lazy(() => import('./components/FormularioFaqFooter').then(m => ({ default: m.FormularioFaqFooter })));
-
-// Lightweight section fallback matching space to prevent Cumulative Layout Shift (CLS)
-const SectionFallback = () => <div className="min-h-[300px] w-full bg-transparent" />;
+import { FormularioDiagnostico } from './components/FormularioDiagnostico';
+import { Metodo } from './components/Metodo';
+import { Transformacao } from './components/Transformacao';
+import { ProvaSocialWhatsapp } from './components/ProvaSocialWhatsapp';
+import { SobreFundador } from './components/SobreFundador';
+import { FormularioFaqFooter } from './components/FormularioFaqFooter';
 
 export default function App() {
-  // IntersectionObserver for lightweight scroll reveal transitions
+  // IntersectionObserver for smooth scroll reveal transitions
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -27,7 +22,7 @@ export default function App() {
       },
       { 
         threshold: 0.05,
-        rootMargin: '0px 0px 120px 0px'
+        rootMargin: '0px 0px 100px 0px'
       }
     );
 
@@ -35,7 +30,7 @@ export default function App() {
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  });
+  }, []);
 
   const scrollToForm = () => {
     const formEl = document.getElementById('diagnostico-form');
@@ -46,45 +41,30 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0B0F1A] text-[#F5F7FA] font-sans selection:bg-[#22D3A6] selection:text-[#0B0F1A]">
-      {/* 1. Header (Logo + CTA) - Loaded immediately for zero delay */}
+      {/* 1. Header (Logo + CTA) */}
       <Header onCtaClick={scrollToForm} />
 
       <main>
-        {/* 2. Hero Section (Início) - Critical Above-the-fold */}
+        {/* 2. Hero Section (Início) */}
         <Hero onCtaClick={scrollToForm} />
 
-        {/* Below the fold sections lazy loaded asynchronously */}
-        <Suspense fallback={<SectionFallback />}>
-          <div className="cv-auto">
-            {/* 3. Formulário + Seção "Antes de qualquer proposta" */}
-            <FormularioDiagnostico />
-          </div>
+        {/* 3. Formulário + Seção "Antes de qualquer proposta" */}
+        <FormularioDiagnostico />
 
-          <div className="cv-auto">
-            {/* 4. Método Sales Lab (+R$30M) */}
-            <Metodo />
-          </div>
+        {/* 4. Método Sales Lab (+R$30M) */}
+        <Metodo />
 
-          <div className="cv-auto">
-            {/* 5. A Transformação */}
-            <Transformacao onCtaClick={scrollToForm} />
-          </div>
+        {/* 5. A Transformação */}
+        <Transformacao onCtaClick={scrollToForm} />
 
-          <div className="cv-auto">
-            {/* 6. Prova Social (Depoimentos estilo prints de WhatsApp) */}
-            <ProvaSocialWhatsapp />
-          </div>
+        {/* 6. Prova Social (Depoimentos estilo prints de WhatsApp) */}
+        <ProvaSocialWhatsapp />
 
-          <div className="cv-auto">
-            {/* 7. Sobre o Fundador (Filipe Rodrigues) */}
-            <SobreFundador />
-          </div>
+        {/* 7. Sobre o Fundador (Filipe Rodrigues) */}
+        <SobreFundador />
 
-          <div className="cv-auto">
-            {/* 8. Formulário + FAQ + Footer */}
-            <FormularioFaqFooter />
-          </div>
-        </Suspense>
+        {/* 8. Formulário + FAQ + Footer */}
+        <FormularioFaqFooter />
       </main>
     </div>
   );

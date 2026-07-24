@@ -22,12 +22,6 @@
     text-rendering: optimizeSpeed;
   }
 
-  /* Rendering optimization for off-screen sections */
-  .cv-auto {
-    content-visibility: auto;
-    contain-intrinsic-size: 1px 800px;
-  }
-
   h1, h2, h3, h4 {
     font-family: var(--font-family);
     font-weight: 600;
