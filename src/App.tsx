@@ -33,10 +33,7 @@ export default function App() {
   }, []);
 
   const scrollToForm = () => {
-    const formEl = document.getElementById('diagnostico-form');
-    if (formEl) {
-      formEl.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = 'https://forms.filiperod.com';
   };
 
   return (

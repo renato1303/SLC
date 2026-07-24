@@ -3,10 +3,7 @@ import { Target, Users, Wrench, Flame, Calendar, Video, Check, ArrowRight } from
 
 export const ProgramaPilares: React.FC = () => {
   const scrollToForm = () => {
-    const formEl = document.getElementById('diagnostico');
-    if (formEl) {
-      formEl.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = 'https://forms.filiperod.com';
   };
 
   const pilares = [

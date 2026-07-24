@@ -73,13 +73,13 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                   }}
                 />
                 {/* Button Content */}
-                <button
-                  onClick={onCtaClick}
+                <a
+                  href="https://forms.filiperod.com"
                   className="relative z-10 w-full sm:w-auto inline-flex items-center justify-center px-5 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base lg:text-lg font-bold text-[#0B0F1A] bg-gradient-to-r from-[#22D3A6] to-[#16a37f] rounded-[9px] shadow-[0_0_25px_rgba(34,211,166,0.35)] hover:shadow-[0_0_45px_rgba(34,211,166,0.6)] transition-all cursor-pointer group text-center"
                 >
                   <span className="whitespace-normal sm:whitespace-nowrap">Quero o diagnóstico da minha operação</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 sm:ml-2.5 group-hover:translate-x-1 transition-transform shrink-0" />
-                </button>
+                </a>
               </div>
 
               {/* Microcopy Below Button */}

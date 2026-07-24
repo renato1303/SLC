@@ -14,11 +14,8 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const scrollToForm = () => {
-    const formEl = document.getElementById('diagnostico');
-    if (formEl) {
-      formEl.scrollIntoView({ behavior: 'smooth' });
-      setMobileMenuOpen(false);
-    }
+    window.location.href = 'https://forms.filiperod.com';
+    setMobileMenuOpen(false);
   };
 
   return (
