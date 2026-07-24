@@ -77,7 +77,7 @@ export const FormularioDiagnostico: React.FC = () => {
       {/* Background Glow Orb */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[700px] h-[300px] sm:h-[400px] bg-[#22D3A6]/10 blur-[120px] sm:blur-[160px] rounded-full pointer-events-none"></div>
 
-      <div className="max-w-4xl mx-auto relative z-10 space-y-12 sm:space-y-16">
+      <div className="max-w-5xl mx-auto relative z-10 space-y-12 sm:space-y-16">
         
         {/* 1. SEÇÃO: Não é uma reunião de venda + Próximos Passos */}
         <div className="space-y-8 sm:space-y-10 reveal">
@@ -86,36 +86,36 @@ export const FormularioDiagnostico: React.FC = () => {
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#F5F7FA] tracking-tight leading-[1.18] break-words">
               Não é uma reunião de venda
             </h2>
-            <p className="mt-3 sm:mt-4 text-sm sm:text-lg text-[#9AA3B2] leading-relaxed">
+            <p className="mt-3 sm:mt-4 text-base sm:text-xl text-[#9AA3B2] leading-relaxed">
               É uma análise da sua estrutura. Você sai da conversa com um mapa claro com autonomia para decidir os próximos passos por conta própria ou com nossa ajuda.
             </p>
           </div>
 
           {/* Como funciona o próximo passo */}
-          <div className="space-y-4">
-            <h3 className="text-lg sm:text-2xl font-bold text-[#F5F7FA] text-center tracking-tight">
+          <div className="space-y-5">
+            <h3 className="text-xl sm:text-3xl font-bold text-[#F5F7FA] text-center tracking-tight">
               Como funciona o próximo passo:
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 pt-2">
               {proximosPassos.map((item, idx) => {
                 const IconComp = item.icon;
                 return (
                   <div 
                     key={idx}
-                    className="p-5 rounded-2xl bg-[#0F131D]/90 border border-white/10 hover:border-[#22D3A6]/30 transition-all shadow-md relative group flex flex-col justify-between"
+                    className="p-5 sm:p-6 rounded-2xl bg-[#0F131D]/90 border border-white/10 hover:border-[#22D3A6]/30 transition-all shadow-md relative group flex flex-col justify-between"
                   >
                     <div>
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-bold text-[#22D3A6] bg-[#22D3A6]/10 px-2.5 py-1 rounded-md border border-[#22D3A6]/20">
+                      <div className="flex items-center justify-between mb-3.5">
+                        <span className="text-xs sm:text-sm font-bold text-[#22D3A6] bg-[#22D3A6]/10 px-3 py-1 rounded-md border border-[#22D3A6]/20">
                           Passo {item.step}
                         </span>
-                        <IconComp className="w-5 h-5 text-[#9AA3B2] group-hover:text-[#22D3A6] transition-colors" />
+                        <IconComp className="w-5 h-5 sm:w-6 sm:h-6 text-[#9AA3B2] group-hover:text-[#22D3A6] transition-colors" />
                       </div>
-                      <h4 className="text-sm sm:text-base font-bold text-white mb-1">
+                      <h4 className="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
                         {item.title}
                       </h4>
-                      <p className="text-xs sm:text-sm text-[#9AA3B2] leading-relaxed">
+                      <p className="text-sm sm:text-base text-[#CBD5E1] leading-relaxed">
                         {item.description}
                       </p>
                     </div>
@@ -127,7 +127,7 @@ export const FormularioDiagnostico: React.FC = () => {
         </div>
 
         {/* 2. SEÇÃO: O que é analisado no diagnóstico */}
-        <div className="pt-6 sm:pt-8 border-t border-white/10 reveal">
+        <div className="pt-14 sm:pt-20 mt-6 sm:mt-10 border-t border-white/10 reveal">
           <div className="text-center mb-8 sm:mb-10">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#F5F7FA] tracking-tight leading-[1.18] break-words">
               O que é analisado no diagnóstico
