@@ -7,12 +7,18 @@
     <meta name="description" content="O programa de aceleração comercial que instala Setters, Closers e Sales Farming no seu negócio para escalar vendas sem depender de tráfego." />
     <meta name="theme-color" content="#0B0F1A" />
     
-    <!-- Resource Hints & Font Preloading -->
+    <!-- Resource Hints & Non-blocking Font Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://player.vimeo.com">
     <link rel="dns-prefetch" href="https://i.vimeocdn.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </noscript>
   </head>
   <body class="bg-[#0B0F1A] text-[#F5F7FA] font-sans antialiased selection:bg-[#22D3A6] selection:text-[#0B0F1A]">
     <div id="root"></div>
