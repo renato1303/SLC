@@ -10,13 +10,16 @@ export const SobreFundador: React.FC = () => {
           {/* Portrait Image Card */}
           <div className="md:col-span-5 relative reveal-left">
             <div className="relative rounded-2xl overflow-hidden border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-[#0E1424]/80 backdrop-blur-md">
-              <img 
-                src="/image.jpeg" 
-                alt="Filipe Rodrigues - Fundador da Sales Lab Company" 
-                loading="lazy"
-                decoding="async"
-                className="w-full h-auto object-cover object-center max-h-[500px] aspect-[4/5]"
-              />
+              <picture>
+                <source srcSet="/image.webp" type="image/webp" />
+                <img 
+                  src="/image.jpeg" 
+                  alt="Filipe Rodrigues - Fundador da Sales Lab Company" 
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto object-cover object-center max-h-[500px] aspect-[4/5]"
+                />
+              </picture>
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F1A] via-transparent to-transparent opacity-60"></div>
               
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#0B0F1A]/80 backdrop-blur-md border border-white/10 shadow-lg">

@@ -88,12 +88,15 @@ export const ProvaSocialWhatsapp: React.FC = () => {
                 onClick={() => setSelectedImg(dep.img)}
                 className={`relative group cursor-pointer overflow-hidden rounded-2xl border border-white/15 bg-slate-900/60 shadow-2xl transition-all duration-300 hover:border-[#22D3A6]/50 hover:shadow-[0_0_25px_rgba(34,211,166,0.15)] ${dep.revealClass}`}
               >
-                <img 
-                  src={dep.img} 
-                  alt={dep.cliente}
-                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                  loading="lazy"
-                />
+                <picture className="w-full">
+                  <source srcSet={dep.img.replace('.jpeg', '.webp')} type="image/webp" />
+                  <img 
+                    src={dep.img} 
+                    alt={dep.cliente}
+                    className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                    loading="lazy"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs sm:text-sm font-medium">
                   <ZoomIn className="w-5 h-5 text-[#22D3A6]" />
                   <span>Clique para ampliar</span>
@@ -109,12 +112,15 @@ export const ProvaSocialWhatsapp: React.FC = () => {
               onClick={() => setSelectedImg(dep.img)}
               className="w-full max-w-2xl relative group cursor-pointer overflow-hidden rounded-2xl border border-white/15 bg-slate-900/60 shadow-2xl transition-all duration-300 hover:border-[#22D3A6]/50 hover:shadow-[0_0_25px_rgba(34,211,166,0.15)] reveal-scale sm:-mt-2 z-10"
             >
-              <img 
-                src={dep.img} 
-                alt={dep.cliente}
-                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                loading="lazy"
-              />
+              <picture className="w-full">
+                <source srcSet={dep.img.replace('.jpeg', '.webp')} type="image/webp" />
+                <img 
+                  src={dep.img} 
+                  alt={dep.cliente}
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs sm:text-sm font-medium">
                 <ZoomIn className="w-5 h-5 text-[#22D3A6]" />
                 <span>Clique para ampliar</span>

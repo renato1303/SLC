@@ -76,13 +76,16 @@ export const ProvaSocial: React.FC = () => {
               {/* Chat Screenshot Image */}
               <div className="p-4 bg-[#0B141A] relative group cursor-pointer" onClick={() => setSelectedImg(print.img)}>
                 <div className="relative overflow-hidden rounded-xl border border-white/10 bg-slate-900">
-                  <img 
-                    src={print.img} 
-                    alt={print.cliente}
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-auto object-contain max-h-[450px]"
-                  />
+                  <picture className="w-full">
+                    <source srcSet={print.img.replace('.jpeg', '.webp')} type="image/webp" />
+                    <img 
+                      src={print.img} 
+                      alt={print.cliente}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-auto object-contain max-h-[450px]"
+                    />
+                  </picture>
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs font-medium">
                     <ZoomIn className="w-5 h-5 text-[#00E5A0]" />
                     <span>Clique para ampliar</span>

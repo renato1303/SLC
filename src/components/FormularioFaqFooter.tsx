@@ -99,13 +99,16 @@ export const FormularioFaqFooter: React.FC = () => {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 border-b border-white/10 pb-8 mb-6">
           
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <img 
-              src="/logo-removebg-preview.png" 
-              alt="Sales Lab Company" 
-              loading="lazy"
-              decoding="async"
-              className="h-12 sm:h-14 w-auto mb-3 opacity-95 drop-shadow-[0_0_12px_rgba(34,211,166,0.2)]"
-            />
+            <picture>
+              <source srcSet="/logo-removebg-preview.webp" type="image/webp" />
+              <img 
+                src="/logo-removebg-preview.png" 
+                alt="Sales Lab Company" 
+                loading="lazy"
+                decoding="async"
+                className="h-12 sm:h-14 w-auto mb-3 opacity-95 drop-shadow-[0_0_12px_rgba(34,211,166,0.2)]"
+              />
+            </picture>
             <p className="text-xs text-[#9AA3B2] max-w-sm">
               Aceleração comercial B2B para empresas de serviços, consultorias e infoprodutos.
             </p>
