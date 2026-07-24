@@ -8,22 +8,19 @@ export const ProvaSocial: React.FC = () => {
     {
       cliente: "Cliente Sales Lab #1",
       tag: "Consultoria B2B & Serviços",
-      img: "/depoimento01.webp",
-      fallbackImg: "/depoimento01.jpeg",
+      img: "/depoimento01.jpeg",
       destaque: "R$240.000 no mês (Meta de R$2M subiu para R$3M)"
     },
     {
       cliente: "Cliente Sales Lab #2",
       tag: "Agência / Aceleração",
-      img: "/depoimento02.webp",
-      fallbackImg: "/depoimento02.jpeg",
+      img: "/depoimento02.jpeg",
       destaque: "2 contratos fechados em 1 semana"
     },
     {
       cliente: "Cliente Sales Lab #3",
       tag: "Infoprodutor & Mentoria",
-      img: "/depoimento03.webp",
-      fallbackImg: "/depoimento03.jpeg",
+      img: "/depoimento03.jpeg",
       destaque: "3 mentorias de R$15.000 vendidas no mesmo ciclo"
     }
   ];

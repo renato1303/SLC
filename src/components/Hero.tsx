@@ -12,7 +12,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
       {/* Background Person Image for Mobile/Tablet */}
       <div className="lg:hidden absolute inset-x-0 top-0 w-full h-[460px] sm:h-[560px] pointer-events-none overflow-hidden z-0 flex justify-center items-start">
         <img 
-          src="/fotohead_mobile.webp" 
+          src="/fotohead _mobile(1).png" 
           alt="Sales Lab Head Mobile" 
           loading="eager"
           fetchPriority="high"
@@ -28,7 +28,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
       {/* Background Person Image for Desktop */}
       <div className="hidden lg:flex absolute inset-y-0 right-0 w-[58%] h-full pointer-events-none overflow-hidden z-0 justify-end items-start">
         <img 
-          src="/fotohead.webp" 
+          src="/fotohead.png" 
           alt="Sales Lab Head Desktop" 
           loading="eager"
           fetchPriority="high"

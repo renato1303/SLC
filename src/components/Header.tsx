@@ -12,7 +12,7 @@ export const Header: React.FC<HeaderProps> = () => {
         {/* Real Logo Image Asset */}
         <div className="flex items-center">
           <img 
-            src="/logo-removebg-preview.webp" 
+            src="/logo-removebg-preview.png" 
             alt="Sales Lab Company" 
             decoding="async"
             loading="eager"

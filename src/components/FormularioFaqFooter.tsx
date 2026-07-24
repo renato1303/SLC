@@ -100,7 +100,7 @@ export const FormularioFaqFooter: React.FC = () => {
           
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <img 
-              src="/logo-removebg-preview.webp" 
+              src="/logo-removebg-preview.png" 
               alt="Sales Lab Company" 
               loading="lazy"
               decoding="async"

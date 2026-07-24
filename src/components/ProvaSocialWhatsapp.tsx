@@ -9,7 +9,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
       id: 1,
       cliente: "Cliente Sales Lab #1",
       tag: "Consultoria B2B & Serviços",
-      img: "/depoimento01.webp",
+      img: "/depoimento01.jpeg",
       destaque: "R$240k no mês · Meta ampliada para R$3.000.000",
       revealClass: "reveal-left"
     },
@@ -17,7 +17,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
       id: 2,
       cliente: "Cliente Sales Lab #2",
       tag: "Agência & Serviços B2B",
-      img: "/depoimento02.webp",
+      img: "/depoimento02.jpeg",
       destaque: "2 contratos fechados na 1ª semana de aplicação",
       revealClass: "reveal-scale"
     },
@@ -25,7 +25,7 @@ export const ProvaSocialWhatsapp: React.FC = () => {
       id: 3,
       cliente: "Cliente Sales Lab #3",
       tag: "Mentoria High-Ticket",
-      img: "/depoimento03.webp",
+      img: "/depoimento03.jpeg",
       destaque: "3 mentorias high-ticket fechadas em 5 dias",
       revealClass: "reveal-right"
     }
