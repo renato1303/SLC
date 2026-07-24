@@ -11,7 +11,7 @@ export const SobreFundador: React.FC = () => {
           <div className="md:col-span-5 relative reveal-left">
             <div className="relative rounded-2xl overflow-hidden border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-[#0E1424]/80 backdrop-blur-md">
               <img 
-                src="/image.webp" 
+                src="/image.jpeg" 
                 alt="Filipe Rodrigues - Fundador da Sales Lab Company" 
                 loading="lazy"
                 decoding="async"

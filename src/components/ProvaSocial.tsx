@@ -8,19 +8,19 @@ export const ProvaSocial: React.FC = () => {
     {
       cliente: "Cliente Sales Lab #1",
       tag: "Consultoria B2B & Serviços",
-      img: "/depoimento01.webp",
+      img: "/depoimento01.jpeg",
       destaque: "R$240.000 no mês (Meta de R$2M subiu para R$3M)"
     },
     {
       cliente: "Cliente Sales Lab #2",
       tag: "Agência / Aceleração",
-      img: "/depoimento02.webp",
+      img: "/depoimento02.jpeg",
       destaque: "2 contratos fechados em 1 semana"
     },
     {
       cliente: "Cliente Sales Lab #3",
       tag: "Infoprodutor & Mentoria",
-      img: "/depoimento03.webp",
+      img: "/depoimento03.jpeg",
       destaque: "3 mentorias de R$15.000 vendidas no mesmo ciclo"
     }
   ];
@@ -79,8 +79,6 @@ export const ProvaSocial: React.FC = () => {
                   <img 
                     src={print.img} 
                     alt={print.cliente}
-                    loading="lazy"
-                    decoding="async"
                     className="w-full h-auto object-contain max-h-[450px]"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs font-medium">
